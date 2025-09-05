@@ -1,0 +1,87 @@
+.contenedor-tiempos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  
+  .tabla-tiempos {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  .encabezado-tiempos {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+  }
+  
+  
+  
+  .encabezado-tabla-tiempos {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #00ffff;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .fila-sanisidro-tiempos{
+    font-size: 16px;
+    background-color: #b4b4b4;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .fila-calicapan-tiempos{
+    font-size: 16px;
+    background-color: #278cff;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .fila-sosa-tiempos{
+    font-size: 16px;
+    background-color: #df60ff;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .fila-tezotepec-tiempos{
+    font-size: 16px;
+    background-color: #ffc400;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .fila-coahuixco-tiempos{
+    font-size: 16px;
+    background-color: #5eff00;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .fila-tacopan-tiempos{
+    font-size: 16px;
+    background-color: #fffb00;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .nota-tiempos{
+    background-color: #585858;
+    color: #ffffff;
+    font-size: 12px;
+    border: 1px solid black;
+}
+  
+  .copyright-tiempos {
+    background-color: #ffffff;
+    border: 0px solid black;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+  }

@@ -1,0 +1,84 @@
+.contenedor-telefonos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.tabla-telefonos {
+  border-collapse: separate;
+  border: 1px solid black;
+}
+
+.encabezado-telefonos {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nota2-telefonos {
+  background-color: lightblue;
+  color: #000000;
+  font-size: 12px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.phone-link {
+  color: black; /* Color del enlace */
+  text-decoration: none; /* Quitar el subrayado */
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.phone-link2 {
+  text-decoration: none; /* Quitar el subrayado */
+  font-size: 18px;
+}
+
+.phone-link:hover {
+  color: red; /* Color al pasar el ratón sobre el enlace */
+  border: 1px solid black;
+}
+
+.phone-link:visited {
+  color: black; /* Color después de que el enlace ha sido visitado */
+  border: 1px solid black;
+}
+
+.phone-link:active {
+  color: green; /* Color cuando se hace clic */
+  border: 1px solid black;
+}
+
+.nota3-telefonos {
+  background-color: lightcoral;
+  color: #000000;
+  font-size: 18px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.nota4-telefonos {
+  background-color: lightgreen;
+  color: #000000;
+  font-size: 14px;
+  text-align: left;
+}
+
+.encabezado-tabla-telefonos {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #00aeff;
+  text-align: center;
+}
+
+.copyright-telefonos {
+  background-color: #ffffff;
+  border: 0px solid black;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+}

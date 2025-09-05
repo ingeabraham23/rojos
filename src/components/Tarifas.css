@@ -1,0 +1,63 @@
+.tabla-tarifas {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.encabezado-tarifas {
+  font-size: 15px;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lugar-tarifas {
+  font-size: 14px;
+  background-color: lightblue;
+  color: #000000;
+  text-align: right;
+  border: 1px solid black;
+}
+
+.precio-tarifas {
+  font-size: 14px;
+  background-color: lightblue;
+  color: #000000;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.nota-tarifas {
+  font-size: 10px;
+  background-color: lightgreen;
+  color: #000;
+  border: 1px solid black;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-capturar {
+  background-color: #ff6803; /* Cambia el color de fondo */
+  color: white; /* Cambia el color del texto */
+  padding: 10px 20px; /* Aumenta el espacio alrededor del texto  donde el primer valor es el minimo y el segundo el maximo*/
+  border: 1px solid #000; /* Muestra un borde*/
+  border-radius: 5px; /* Agrega bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Agrega una transición */
+  margin-top: 5px; /*Margen superior*/
+  margin-bottom: 5px; /*Margen inferiorr*/
+  font-size: 20px; /*Tamaño de fuente*/
+}
+
+.copyright-tarifas {
+  background-color: #ffffff;
+  border: 0px solid black;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+}

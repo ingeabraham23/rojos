@@ -1,0 +1,84 @@
+.tabla-huapaltepec{
+    border-collapse: separate;
+    border: 1px solid black;
+}
+
+.encabezado-huapaltepec{
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.nota-huapaltepec{
+    background-color: lightpink;
+    color: #000000;
+    font-size: 12px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.nota-huapaltepec-roja{
+    background-color: rgb(255, 0, 38);
+    color: #ffffff;
+    font-size: 12px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.encabezado-tabla-huapaltepec{
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #00aeff;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.unidad03-huapaltepec{
+    font-size: 17px;
+    background-color: lightgreen;
+    color: #000000;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.unidad30-huapaltepec{
+    font-size: 17px;
+    background-color: lightblue;
+    color: #000000;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.subida03-huapaltepec{
+    background-color: lightgreen;
+    font-size: 14px;
+    color: #000000;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.subida30-huapaltepec{
+    background-color: lightblue;
+    font-size: 14px;
+    color: #000000;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.mañana-tarde-huapaltepec{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 10px;
+}
+
+.copyright-huapaltepec {
+    background-color: #ffffff;
+    border: 0px solid black;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+  }

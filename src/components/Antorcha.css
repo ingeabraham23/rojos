@@ -1,0 +1,77 @@
+.tabla-antorcha{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.encabezado-antorcha{
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nota1-antorcha{
+    background-color: rgb(208, 255, 0);
+    color: #000000;
+    font-size: 10px;
+    text-align: Center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.nota2-antorcha{
+    background-color: lightblue;
+    color: #000000;
+    font-size: 10px;
+    text-align: left;
+}
+
+.nota3-antorcha{
+    background-color: lightcoral;
+    color: #000000;
+    font-size: 10px;
+    text-align: left;
+}
+
+.nota4-antorcha{
+    background-color: lightgreen;
+    color: #000000;
+    font-size: 10px;
+    text-align: left;
+}
+
+.nota5-antorcha{
+    background-color: lemonchiffon;
+    color: #000000;
+    font-size: 10px;
+    text-align: left;
+}
+
+.nota6-antorcha{
+    background-color: lightpink;
+    color: #000000;
+    font-size: 10px;
+    text-align: left;
+}
+
+.nota7-antorcha{
+    background-color: gold;
+    color: #000000;
+    font-size: 10px;
+    text-align: left;
+}
+
+.encabezado-tabla-antorcha{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #00aeff;
+}
+
+.copyright-antorcha {
+    background-color: #ffffff;
+    border: 0px solid black;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+  }

@@ -1,0 +1,82 @@
+.tabla-tepepan {
+  border-collapse: separate;
+  border: 1px solid black;
+}
+
+.encabezado-tepepan {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.encabezado-tabla-tepepan {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #00aeff;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.unidada-tepepan {
+  font-size: 17px;
+  background-color: lightblue;
+  color: #000000;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.unidadb-tepepan {
+  font-size: 17px;
+  background-color: lightcoral;
+  color: #000000;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.unidadc-tepepan {
+  font-size: 17px;
+  background-color: lightgreen;
+  color: #000000;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.unidadd-tepepan {
+  font-size: 17px;
+  background-color: lightseagreen;
+  color: #000000;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.sin-horario-tepepan {
+  background-color: #ffffff;
+  font-size: 14px;
+  border: 0px solid black;
+  color: #000000;
+  border: 1px solid black;
+}
+
+.centro-tepepan {
+  background-color: #ffffff;
+  border: 0px solid black;
+}
+
+.nota-tepepan {
+  background-color: #585858;
+  color: #ffffff;
+  font-size: 12px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.copyright-tepepan {
+  background-color: #ffffff;
+  border: 0px solid black;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+}

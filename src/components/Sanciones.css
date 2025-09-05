@@ -1,0 +1,94 @@
+/* Estilos para la tabla */
+.tabla-sanciones {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1px 0;
+  border: 1px solid #000000;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-sanciones {
+  border: 1px solid #000000;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(255, 0, 0);
+}
+
+.encabezado-sanciones {
+  border: 1px solid #000000;
+  text-align: center;
+  color: #000000;
+  background-color: lightblue;
+}
+
+.encabezado-sanciones-chico {
+  border: 1px solid #000000;
+  text-align: center;
+  color: #000000;
+  background-color: lightblue;
+  font-size: 10px;
+}
+
+.columna-sanciones {
+  border: 1px solid #000000;
+  padding: 1px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 10px;
+}
+
+.baja-sanciones {
+  border: 1px solid #000000;
+  padding: 1px;
+  text-align: center;
+  color: #ffffff;
+  background-color: orangered;
+  font-size: 10px;
+}
+
+.otra-sanciones {
+  border: 1px solid #000000;
+  padding: 1px;
+  text-align: center;
+  color: #000000;
+  background-color: lightgreen;
+  font-size: 10px;
+}
+
+.pie-sanciones {
+  border: 1px solid #000000;
+  padding: 1px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #474747;
+  font-size: 10px;
+}
+
+.boton-capturar {
+  background-color: #ff6803; /* Cambia el color de fondo */
+  color: white; /* Cambia el color del texto */
+  padding: 10px 20px; /* Aumenta el espacio alrededor del texto  donde el primer valor es el minimo y el segundo el maximo*/
+  border: 1px solid #000; /* Muestra un borde*/
+  border-radius: 5px; /* Agrega bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Agrega una transición */
+  margin-top: 5px; /*Margen superior*/
+  margin-bottom: 5px; /*Margen inferiorr*/
+  font-size: 20px; /*Tamaño de fuente*/
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-sanciones {
+  background-color: #ffffff;
+  border: 0px solid black;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+}
