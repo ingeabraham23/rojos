@@ -43,6 +43,11 @@ function Huapaltepec() {
             </td>
           </tr>
           <tr>
+            <td colSpan={5} className="encabezado-huapaltepec">
+              A partir del Lunes 29 de septiembre.
+            </td>
+          </tr>
+          <tr>
             <td className="encabezado-tabla-huapaltepec">#</td>
             <td className="encabezado-tabla-huapaltepec">Teziutlan</td>
             <td className="encabezado-tabla-huapaltepec">Huapaltepec</td>
@@ -141,6 +146,9 @@ function Huapaltepec() {
             <td className="subida03-huapaltepec">Sosa</td>
           </tr>
           <tr>
+            <td className="unidad30-huapaltepec" colSpan={5}>De Lunes a sabado únicamente</td>
+          </tr>
+          <tr>
             <td className="unidad30-huapaltepec">30</td>
             <td className="unidad30-huapaltepec">6:30 p.m.</td>
             <td className="unidad30-huapaltepec">7:20 p.m.</td>
@@ -148,11 +156,24 @@ function Huapaltepec() {
             <td className="subida30-huapaltepec">Sosa</td>
           </tr>
           <tr>
+            <td className="unidad03-huapaltepec" colSpan={5}>Ultima corrida los sabados y domingos</td>
+          </tr>
+          <tr>
             <td className="unidad03-huapaltepec">03</td>
             <td className="unidad03-huapaltepec">7:15 p.m.</td>
             <td className="unidad03-huapaltepec">8:05 p.m.</td>
             <td className="subida03-huapaltepec">Sosa</td>
             <td className="subida03-huapaltepec">Talzintan</td>
+          </tr>
+          <tr>
+            <td className="unidad30-huapaltepec" colSpan={5}>Ultima corrida de Lunes a Viernes</td>
+          </tr>
+          <tr>
+            <td className="unidad30-huapaltepec">30</td>
+            <td className="unidad30-huapaltepec">8:10 p.m.</td>
+            <td className="unidad30-huapaltepec">9:00 p.m.</td>
+            <td className="subida30-huapaltepec">Talzintan</td>
+            <td className="subida30-huapaltepec">Sosa</td>
           </tr>
           <tr>
             <td colSpan={5} className="nota-huapaltepec">
@@ -176,13 +197,13 @@ function Huapaltepec() {
               De Huapaltepec a fresnillo y teziutlan: $ 15.00.
             </td>
           </tr>
-          <tr>
+          {/* <tr>
             <td colSpan={5} className="nota-huapaltepec-roja">
               Apartir del domingo 10 de noviembre de 2024.<br></br>
               Y durante los siguientes domingos.<br></br>
               Se cancela la salida de 6:30 de la tarde.<br></br>
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td colSpan={5} className="copyright-huapaltepec">
               © JoyBoy

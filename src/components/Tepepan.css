@@ -1,5 +1,5 @@
 .tabla-tepepan {
-  border-collapse: separate;
+  border-collapse: collapse;
   border: 1px solid black;
 }
 
@@ -28,6 +28,13 @@
   text-align: center;
 }
 
+.unidada-tepepan-terraceria {
+  font-size: 10px;
+  background-color: lightblue;
+  color: #000000;
+  text-align: center;
+}
+
 .unidadb-tepepan {
   font-size: 17px;
   background-color: lightcoral;
@@ -36,11 +43,25 @@
   text-align: center;
 }
 
+.unidadb-tepepan-pavimento {
+  font-size: 10px;
+  background-color: lightcoral;
+  color: #000000;
+  text-align: center;
+}
+
 .unidadc-tepepan {
   font-size: 17px;
   background-color: lightgreen;
   color: #000000;
   border: 1px solid black;
+  text-align: center;
+}
+
+.unidadc-tepepan-pavimento {
+  font-size: 10px;
+  background-color: lightgreen;
+  color: #000000;
   text-align: center;
 }
 

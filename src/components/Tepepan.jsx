@@ -45,35 +45,60 @@ function Tepepan() {
           </tr>
 
           <tr>
+            <td colSpan={3} className="unidadc-tepepan-pavimento">Arriba Pavimento</td>
+            <td className="centro-tepepan"></td>
+            <td colSpan={3}  className="unidadb-tepepan"></td>
+          </tr>
+          <tr>
             <td className="unidadc-tepepan">08</td>
             <td className="unidadc-tepepan"></td>
             <td className="unidadc-tepepan">6.20</td>
             <td className="centro-tepepan"></td>
-            <td className="unidadb-tepepan">B</td>
+            <td className="unidadb-tepepan">8</td>
             <td className="unidadb-tepepan">12:15</td>
             <td className="unidadb-tepepan">12:45</td>
           </tr>
+
           <tr>
-            <td className="unidada-tepepan">A</td>
+            <td colSpan={3} className="unidada-tepepan-terraceria">Abajo Terraceria</td>
+            <td className="centro-tepepan"></td>
+            <td colSpan={3} className="unidadb-tepepan"></td>
+          </tr>
+
+          <tr>
+            <td className="unidada-tepepan">05</td>
             <td className="unidada-tepepan"></td>
-            <td className="unidada-tepepan">6:40</td>
+            <td className="unidada-tepepan">6:30</td>
             <td className="centro-tepepan"></td>
             <td className="unidada-tepepan">A</td>
             <td className="unidada-tepepan">1:00</td>
             <td className="unidada-tepepan">1:30</td>
           </tr>
+
           <tr>
-            <td className="unidadb-tepepan">B</td>
+            <td colSpan={3} className="unidadb-tepepan-pavimento">Arriba Pavimento</td>
+            <td className="centro-tepepan"></td>
+            <td colSpan={3} className="unidadb-tepepan"></td>
+          </tr>
+
+          <tr>
+            <td className="unidadb-tepepan">02</td>
             <td className="unidadb-tepepan"></td>
-            <td className="unidadb-tepepan">7:00</td>
+            <td className="unidadb-tepepan">6:45</td>
             <td className="centro-tepepan"></td>
             <td className="unidadb-tepepan">B</td>
             <td className="unidadb-tepepan">1:50</td>
             <td className="unidadb-tepepan">2:20</td>
           </tr>
+
           <tr>
-            <td className="unidadc-tepepan">08</td>
-            <td className="unidadc-tepepan">6:50</td>
+            <td colSpan={3} className="unidadb-tepepan-pavimento">Abajo terraceria</td>
+            <td className="centro-tepepan"></td>
+            <td colSpan={3} className="unidadb-tepepan"></td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">15</td>
+            <td className="unidadc-tepepan">7:00</td>
             <td className="unidadc-tepepan">7:20</td>
             <td  className="centro-tepepan"></td>
             <td className="unidada-tepepan">A</td>

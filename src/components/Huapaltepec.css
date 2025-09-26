@@ -1,13 +1,12 @@
 .tabla-huapaltepec{
-    border-collapse: separate;
+    border-collapse: collapse;
     border: 1px solid black;
 }
 
 .encabezado-huapaltepec{
-    background-color: #ff0000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-size: 20px;
-    font-weight: bold;
     text-align: center;
     border: 1px solid black;
 }
@@ -29,11 +28,12 @@
 }
 
 .encabezado-tabla-huapaltepec{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    background-color: #00aeff;
+    background-color: #a5e0fc;
     border: 1px solid black;
     text-align: center;
+    padding: 10px;
 }
 
 .unidad03-huapaltepec{
@@ -46,7 +46,7 @@
 
 .unidad30-huapaltepec{
     font-size: 17px;
-    background-color: lightblue;
+    background-color: rgb(238, 109, 255);
     color: #000000;
     border: 1px solid black;
     text-align: center;
@@ -61,7 +61,7 @@
 }
 
 .subida30-huapaltepec{
-    background-color: lightblue;
+    background-color: rgb(238, 109, 255);
     font-size: 14px;
     color: #000000;
     border: 1px solid black;
