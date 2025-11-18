@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useRef } from "react";
 import html2canvas from "html2canvas";
-import antorcha from "/antorcha.png";
+import antorcha from "/antorcha2025.png";
 
 import "./Antorcha.css";
 

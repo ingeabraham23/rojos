@@ -19,6 +19,7 @@ import Tiempos from './components/Tiempos';
 import Virgen from './components/Virgen';
 import Puerto from './components/Puerto';
 import Antorcha from './components/Antorcha';
+import CristoRey from './components/CristoRey';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/virgen" element={<Virgen />} />
             <Route path="/puerto" element={<Puerto />} />
             <Route path="/antorcha" element={<Antorcha />} />
+          <Route path="/cristo" element={<CristoRey />} />
           </Routes>
         </div>
     </HashRouter>
