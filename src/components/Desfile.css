@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "ARCO Typography";
+  src: url("../fonts/ARCO.ttf") format("truetype"); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tabla-desfile {
+  border-collapse: collapse;
+  border: 0px solid black;
+}
+
+.encabezado-desfile {
+  font-family: "ARCO Typography";
+  color: #ff0000;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-align: center;
+  -webkit-text-stroke-width: 1px; /* Grosor del contorno */
+  -webkit-text-stroke-color: #000000; /* Color del contorno */
+  padding-top: 10px;
+}
+
+.nota1-desfile {
+  color: #000000;
+  font-size: 16px;
+  text-align: Center;
+  padding: 5px;
+}
+
+.nota2-desfile {
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+}
+
+.nota3-desfile {
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+}
+
+.nota4-desfile {
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cita-desfile {
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+}
+
+.copyright-desfile {
+  background-color: #ffffff;
+  border: 0px solid black;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+}

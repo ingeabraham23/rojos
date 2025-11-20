@@ -13,6 +13,7 @@ import {
     faTrashCan,
     faTree,
     faCross,
+    faPersonWalking,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClockFour } from '@fortawesome/free-solid-svg-icons/faClockFour';
@@ -33,6 +34,7 @@ const navigationItems = [
   { path: '/puerto', icon: faRoadBridge, label: 'Puerto' },
   { path: '/antorcha', icon: faFireFlameCurved, label: 'Antorcha' },
   { path: '/cristo', icon: faCross, label: 'cristo' },
+  { path: '/desfile', icon: faPersonWalking, label: 'desfile' },
 
 ];
 

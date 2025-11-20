@@ -20,30 +20,32 @@ import Virgen from './components/Virgen';
 import Puerto from './components/Puerto';
 import Antorcha from './components/Antorcha';
 import CristoRey from './components/CristoRey';
+import Desfile from './components/Desfile';
 
 function App() {
 
   return (
     <HashRouter>
-        <div>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Sanciones />} />
-            <Route path="/tarifas" element={<Tarifas />} />
-            <Route path="/accidente" element={<Accidente />} />
-            <Route path="/huapaltepec" element={<Huapaltepec />} />
-            <Route path="/basura" element={<NoTirarBasura />} />
-            <Route path="/tepepan" element={<Tepepan />} />
-            <Route path="/sanmiguel" element={<SanMiguel />} />
-            <Route path="/telefonos" element={<Telefonos />} />
-            <Route path="/tarjetas" element={<TarjetasInformativas />} />
-            <Route path="/tiempos" element={<Tiempos />} />
-            <Route path="/virgen" element={<Virgen />} />
-            <Route path="/puerto" element={<Puerto />} />
-            <Route path="/antorcha" element={<Antorcha />} />
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Sanciones />} />
+          <Route path="/tarifas" element={<Tarifas />} />
+          <Route path="/accidente" element={<Accidente />} />
+          <Route path="/huapaltepec" element={<Huapaltepec />} />
+          <Route path="/basura" element={<NoTirarBasura />} />
+          <Route path="/tepepan" element={<Tepepan />} />
+          <Route path="/sanmiguel" element={<SanMiguel />} />
+          <Route path="/telefonos" element={<Telefonos />} />
+          <Route path="/tarjetas" element={<TarjetasInformativas />} />
+          <Route path="/tiempos" element={<Tiempos />} />
+          <Route path="/virgen" element={<Virgen />} />
+          <Route path="/puerto" element={<Puerto />} />
+          <Route path="/antorcha" element={<Antorcha />} />
           <Route path="/cristo" element={<CristoRey />} />
-          </Routes>
-        </div>
+          <Route path="/desfile" element={<Desfile />} />
+        </Routes>
+      </div>
     </HashRouter>
   );
   /* return (

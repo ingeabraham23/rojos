@@ -39,44 +39,40 @@ function CristoRey() {
 
     return (
         <div>
-            <table ref={tablaRef} className="tabla-antorcha">
+            <table ref={tablaRef} className="tabla-cristo">
                 <tbody>
 
                     <tr>
-                        <td className="encabezado-antorcha">
-                            Logística Especial – Fiesta de Cristo Rey (Urbanos Rojos)
+                        <td className="encabezado-tabla-cristo">
+                            Logística Especial: Fiesta de Cristo Rey (Urbanos Rojos)
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b> De 6:00 AM a 9:00 AM</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota2-antorcha">
-                            Todas las unidades podrán trabajar con destino al <b>Puerto</b>.
+                        <td className="nota1-cristo">
+                            A excepcion de las rutas (Tacopan, Tepepan y Huapaltepec ).<br></br>
+                            Todas las demas unidades podrán trabajar con destino al <b>Puerto</b>.
                             Pueden darse la vuelta donde gusten, cargar en la base hacia el puerto o trabajar en su ramal correspondiente.
                             Ambas opciones están permitidas durante este horario.
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b>De 9:00 AM a 3:00 PM – Trabajo por Enrolamiento</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota3-antorcha">
+                        <td className="nota2-cristo">
                             A partir de las 9:00 AM, el checador comenzará a enrolar a las unidades
                             conforme les toque turno:
-                            <br />
-                            <ul>
-                                <li>Si al operador le toca <b>Puerto</b>, deberá realizar una vuelta al Puerto.</li>
-                                <li>Si le toca <b>Ruta Normal</b>, trabajará su ruta correspondiente.</li>
-                            </ul>
                             <br />
                             Después de su primer recorrido:
                             <ul>
@@ -90,27 +86,27 @@ function CristoRey() {
                             <br />
                             <b>Importante — Facultad del Checador:</b>
                             <br />
-                            El checador, como autoridad operativa en turno, podrá <b>repetirle al operador la misma ruta</b> (ya sea Ruta Normal o Puerto) si así lo considera necesario para mantener el orden, el flujo vehicular o la correcta distribución de unidades.
-                            <br /><br />
-                            En consecuencia, y por motivos de organización:
+                            El checador, como autoridad operativa en turno, podrá <b>repetirle al operador la misma ruta</b> (ya sea Ruta Normal o Puerto) si así lo considera necesario.
+                            <br />
                             <ul>
                                 <li>
                                     <b>Ninguna decisión del checador deberá ser cuestionada</b>, pues responde a las necesidades operativas del momento y busca garantizar equilibrio y orden en la prestación del servicio.
                                 </li>
                             </ul>
+                            <br />
                         </td>
                     </tr>
 
 
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b>Despues de las 3:00 PM . Libre al Puerto</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota5-antorcha">
-                            A partir de las 3:00 PM todas las unidades podrán dirigirse al
+                        <td className="nota3-cristo">
+                            A partir de las 3:00 PM todas las unidades podrán dirigirse al{" "}
                             <b>Puerto con total libertad</b>, pero cumpliendo las siguientes reglas:
                             <ol>
                                 <li>Las unidades deberán ir <b>vacías</b> hacia el Puerto.</li>
@@ -128,7 +124,7 @@ function CristoRey() {
                     </tr>
 
                     <tr>
-                        <td colSpan={5} className="copyright-antorcha">
+                        <td colSpan={5} className="copyright-cristo">
                             © JoyBoy
                         </td>
                     </tr>
@@ -148,20 +144,20 @@ function CristoRey() {
                 <tbody>
 
                     <tr>
-                        <td className="encabezado-antorcha">
+                        <td className="encabezado-tabla-cristo">
                             Tarifas Oficiales y Apoyo Operativo – Urbanos Rojos
                         </td>
                     </tr>
 
                     {/* TARIFA DE 10 PESOS */}
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b>Tarifa: $10.00 MXN</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota2-antorcha">
+                        <td className="nota1-cristo">
                             Aplica para usuarios que aborden desde:
                             <ul>
                                 <li><b>Teziutlán – Fresnillo</b></li>
@@ -173,13 +169,13 @@ function CristoRey() {
 
                     {/* TARIFA DE 9 PESOS */}
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b>Tarifa: $9.00 MXN</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota3-antorcha">
+                        <td className="nota2-cristo">
                             Aplica para usuarios que aborden desde:
                             <ul>
                                 <li><b>Parada El Capulín</b></li>
@@ -191,13 +187,13 @@ function CristoRey() {
 
                     {/* TARIFA DE 8 PESOS */}
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b>Tarifa: $8.00 MXN</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota4-antorcha">
+                        <td className="nota3-cristo">
                             Aplica para usuarios que aborden a partir de:
                             <ul>
                                 <li><b>Parada San Mateo en adelante</b></li>
@@ -208,44 +204,37 @@ function CristoRey() {
 
                     {/* APOYO OPERATIVO EN EL PUERTO */}
                     <tr>
-                        <td className="nota1-antorcha">
+                        <td className="encabezado-cristo">
                             <b>Apoyo Operativo en el Puerto</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td className="nota5-antorcha">
+                        <td className="nota4-cristo">
                             Para garantizar un flujo ordenado de pasaje y evitar que la competencia
                             capte a los usuarios que corresponden a nuestras unidades, se ha designado
                             a una persona encargada de apoyar en la zona del <b>Puerto</b>.
                             <br /><br />
 
                             Dicho apoyo consiste en orientar, llamar y dirigir a los pasajeros hacia
-                            las camionetas de Urbanos Rojos, asegurando una operación eficiente y
-                            evitando pérdidas de servicio.
+                            las camionetas de Urbanos Rojos.
                             <br /><br />
 
-                            <b>Persona designada:</b>
-                            <ul>
-                                <li><b>Nicolás – “El Guapo”</b></li>
-                            </ul>
+                            <b>Persona designada: <b>Nicolás – “El Guapo”</b> </b> <br></br>
 
                             Este apoyo es fundamental para mantener presencia y competitividad en la zona.
                             Su colaboración es constante, activa y en beneficio directo del colectivo de
                             operadores.
                             <br /><br />
 
-                            <b>Invitación a la Comisión Voluntaria:</b><br />
-                            Se solicita atentamente a los operadores brindar una <b>contribución voluntaria</b>
-                            a Nicolás (“El Guapo”) en reconocimiento a su labor de apoyo.
-                            Se invita de manera respetuosa y profesional
-                            a todos los compañeros a participar, ya que su esfuerzo repercute en un beneficio
-                            general para la ruta. En pocas palabras no se vayan a hacer pendejos con su comision. 🤬
+                            <b>Comisión para El Guapo:</b><br />
+                            Se solicita atentamente a los operadores brindar una{" "} <b>contribución</b>{" "}
+                            a Nicolás (“El Guapo”) en reconocimiento a su labor de apoyo.<br></br>En pocas palabras no se vayan a hacer pendejos con su comision. 🤬
                         </td>
                     </tr>
 
                     <tr>
-                        <td colSpan={5} className="copyright-antorcha">
+                        <td colSpan={5} className="copyright-cristo">
                             © JoyBoy
                         </td>
                     </tr>
