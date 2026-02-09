@@ -17,10 +17,10 @@ import Telefonos from './components/Telefonos';
 import TarjetasInformativas from './components/TarjetasInformativas';
 import Tiempos from './components/Tiempos';
 import Virgen from './components/Virgen';
-import Puerto from './components/Puerto';
 import Antorcha from './components/Antorcha';
 import CristoRey from './components/CristoRey';
 import Desfile from './components/Desfile';
+import Reunion from './components/Reunion';
 
 function App() {
 
@@ -40,10 +40,10 @@ function App() {
           <Route path="/tarjetas" element={<TarjetasInformativas />} />
           <Route path="/tiempos" element={<Tiempos />} />
           <Route path="/virgen" element={<Virgen />} />
-          <Route path="/puerto" element={<Puerto />} />
           <Route path="/antorcha" element={<Antorcha />} />
           <Route path="/cristo" element={<CristoRey />} />
           <Route path="/desfile" element={<Desfile />} />
+          <Route path="/reunion" element={<Reunion />} />
         </Routes>
       </div>
     </HashRouter>

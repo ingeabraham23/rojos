@@ -73,7 +73,7 @@ function Antorcha() {
             </td>
           </tr>
           <tr>
-            <td className="nota1-antorcha">Inicio 9:00 - 9:20 PM</td>
+            <td className="nota1-antorcha">Inicio 9:00 - 9:10 PM</td>
           </tr>
           <tr>
             <td className="nota2-antorcha">
@@ -83,24 +83,24 @@ function Antorcha() {
           </tr>
           <tr>
             <td className="nota1-antorcha">
-              <b>Partida: 9:20 PM</b>
+              <b>Partida: 9:10 PM</b>
             </td>
           </tr>
           <tr>
             <td className="nota3-antorcha">
-              Salida rumbo a Las Delicias, Atempan. Tiempo estimado de llegada:
-              9:40 PM.
+              Salida rumbo al Puerto. Tiempo estimado de llegada:
+              9:20 PM.
             </td>
           </tr>
           <tr>
             <td className="nota1-antorcha">
-              <b>Punto 1: Las Delicias</b>
+              <b>Punto 1: El Puerto</b>
             </td>
           </tr>
           <tr>
             <td className="nota4-antorcha">
               Al llegar, se solicitará fuego de alguna antorcha que pase.
-              Comienza la carrera de relevos. 10:00 PM.
+              Comienza la carrera de relevos. 9:30 PM.
             </td>
           </tr>
           <tr>
@@ -111,14 +111,14 @@ function Antorcha() {
           <tr>
             <td className="nota5-antorcha">
               <ol>
-                <li>El Puerto: 10:20 PM.</li>
-                <li>La Parada de Sosa 10:40 PM.</li>
-                <li>Templo Shalom 11:00 PM.</li>
+                <li>la jarocha: 09:50 PM.</li>
+                <li>San Mateo 10:10 PM.</li>
+                <li>Templo Shalom 10:30 PM.</li>
                 <li>
-                  Chedraui: 11:20 PM. Última parada antes de la llegada al
+                  Chedraui: 10:50 PM. Última parada antes de la llegada al
                   destino principal.
                 </li>
-                <li>Catedral: 11:40 PM.</li>
+                <li>Catedral: 11:10 PM.</li>
               </ol>
             </td>
           </tr>
@@ -293,7 +293,7 @@ function Antorcha() {
                   utilizados.
                 </li>
                 <li>
-                  <b>Calentar antes de la carrera, en las Delicias.</b>
+                  <b>Calentar antes de la carrera, en el Puerto.</b>
                 </li>
                 <li>
                   Recomendaciones de alimentación:
@@ -376,25 +376,8 @@ function Antorcha() {
                 <li>Las aportaciones están destinadas a:</li>
                 <ul>
                   <li>Pintura, adornos y luces.</li>
-                  <li>Preparación de alimentos (tamales y ponche).</li>
-                </ul>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td className="nota1-antorcha">
-              <b>Costo Estimado de Platillo</b>
-            </td>
-          </tr>
-          <tr>
-            <td className="nota4-antorcha">
-              <ul>
-                <li>
-                  El costo promedio por persona es de $30 pesos, que incluye:
-                </li>
-                <ul>
-                  <li>Dos tamales. (24 pesos)</li>
-                  <li>Un vaso de ponche. (6 pesos)</li>
+                  <li>Alimentos (tortillas, refrescos, platos, vasos).</li>
+                  <li>Renta de mesas, lona y sillas.</li>
                 </ul>
               </ul>
             </td>
