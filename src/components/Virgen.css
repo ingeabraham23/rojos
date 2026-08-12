@@ -1,49 +1,473 @@
-.contenedor-tiempos {
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   ========================================= */
+
+.contenedor-virgen {
   width: 100%;
+  padding: 10px 0 25px 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+}
+
+
+/* =========================================
+   TABLA
+   ========================================= */
+
+.tabla-virgen {
+  width: 96%;
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  overflow: hidden;
+
+  background: #fffaf2;
+
+  border: 1px solid #d6b77a;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 20px rgba(93, 66, 32, 0.16);
+
+  color: #4a3b2f;
+}
+
+
+/* =========================================
+   IMÁGENES DE LA VIRGEN
+   ========================================= */
+
+.imagenes-virgen {
   display: flex;
-  flex-direction: column;
-  padding: 0px;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 4px 2px 1px 2px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf8,
+      #fff8ed
+    );
 }
 
-.tabla-tiempos {
-  border-collapse: collapse;
-  border: 1px solid black;
+.imagen-virgen {
+  object-fit: contain;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 7px rgba(75, 55, 25, 0.18);
 }
 
-.encabezado-virgen {
-  background-color: #4aaeff;
-  color: #000000;
-  font-size: 20px;
-  font-weight: bold;
+
+.imagen-virgen-lateral {
+  width: 27%;
+  max-width: 85px;
+}
+
+
+.imagen-virgen-centro {
+  width: 32%;
+  max-width: 115px;
+
+  height: 115px;
+}
+
+
+/* =========================================
+   LOGO URBANOS ROJOS
+   ========================================= */
+
+.logo-urbanos {
   text-align: center;
+  background: #fffaf2;
 }
 
-.encabezado-tabla-tiempos {
+
+.imagen-urbanos {
+  width: 100px;
+  max-width: 65%;
+  height: auto;
+}
+
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   ========================================= */
+
+.titulo-virgen {
+
+  background:
+    linear-gradient(
+      135deg,
+      #b98245,
+      #d7a66d,
+      #b98245
+    );
+
+  color: #ffffff;
+  text-align: center;
+  padding: 4px 3px;
+  border-top: 1px solid #a9753d;
+  border-bottom: 2px solid #9a6836;
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.25);
+}
+
+
+.titulo-principal-virgen {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+.subtitulo-virgen {
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   SEPARADOR
+   ========================================= */
+
+.separador-dorado {
+
+  text-align: center;
+  padding: 0;
+  color: #b8863b;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background: #fffaf2;
+}
+
+
+/* =========================================
+   TEXTO
+   ========================================= */
+
+.texto-virgen {
+
+  padding: 3px 4px;
+  background: #fffaf2;
+  color: #4a3b2f;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+  line-height: 1.55;
+  text-align: justify;
+  border-bottom: 1px solid #eee0c9;
+}
+
+
+.texto-virgen b {
+  color: #68482c;
+}
+
+
+/* =========================================
+   CANTIDAD $150
+   ========================================= */
+
+.cantidad-virgen {
+
+  display: inline-block;
+  margin: 0 4px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: #ead2a9;
+  color: #5c3e20;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   BLOQUE DE FECHA
+   ========================================= */
+
+.bloque-fecha-virgen {
+
+  margin: 0;
+
+  padding: 5px 3px;
+  text-align: center;
+  background: #f5ead8;
+  border-top: 1px solid #dfc69c;
+  border-bottom: 1px solid #dfc69c;
+}
+
+
+.etiqueta-fecha {
+
+  color: #8a6336;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.fecha-virgen {
+
+  margin-top: 5px;
+
+  color: #4e3823;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.fecha-virgen span {
+  font-weight: 400;
+
+  color: #806849;
+}
+
+
+/* =========================================
+   ENCARGADO
+   ========================================= */
+
+.encargado-virgen {
+
+  display: inline-block;
+
+  margin: 0 4px;
+
+  color: #8b5d2f;
+
+  font-weight: 800;
+}
+
+
+/* =========================================
+   AGRADECIMIENTO
+   ========================================= */
+
+.agradecimiento-virgen {
+
+  padding: 4px 6px;
+  background: #fdf8ef;
+  color: #6e5a45;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  border-bottom: 1px solid #eadcc5;
+}
+
+
+/* =========================================
+   DECORACIÓN FINAL
+   ========================================= */
+
+.decoracion-final-virgen {
+
+  padding: 2px;
+  text-align: center;
+  color: #b8863b;
   font-size: 14px;
-  font-weight: bold;
-  background-color: #00ffff;
-  text-align: center;
-  border: 2px solid black;
+  background: #fffaf2;
 }
 
-.nota-virgen {
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-}
 
-.nota-virgen-roja {
-  background-color: #ffffff;
-  color: #ff0000;
-  font-size: 14px;
-  text-align: center;
-}
+/* =========================================
+   COPYRIGHT
+   ========================================= */
 
 .copyright-virgen {
-  background-color: #ffffff;
-  border: 0px solid black;
-  color: #000000;
-  font-size: 10px;
+
+  padding: 4px !important;
+
+  background: #6e5035;
+
+  color: #eadbc3;
+
   text-align: center;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.7px;
+}
+
+
+/* =========================================
+   BOTÓN
+   ========================================= */
+
+.contenedor-boton-virgen {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 14px 0 25px 0;
+}
+
+
+.boton-capturar-virgen {
+
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #b98245,
+      #8f6338
+    );
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 10px rgba(90, 61, 29, 0.22);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.boton-capturar-virgen:active {
+
+  transform: scale(0.96);
+
+  box-shadow:
+    0 2px 5px rgba(90, 61, 29, 0.18);
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+  .contenedor-virgen {
+    padding-top: 68px;
+  }
+
+
+  .tabla-virgen {
+    width: 98%;
+
+    border-radius: 13px;
+  }
+
+
+  .imagenes-virgen {
+    gap: 7px;
+
+    padding: 9px 5px 5px 5px;
+  }
+
+
+  .imagen-virgen-lateral {
+    max-width: 72px;
+  }
+
+
+  .imagen-virgen-centro {
+    max-width: 95px;
+
+    height: 100px;
+  }
+
+
+  .imagen-urbanos {
+    width: 135px;
+  }
+
+
+  .titulo-principal-virgen {
+    font-size: 15px;
+  }
+
+
+  .subtitulo-virgen {
+    font-size: 11px;
+  }
+
+
+  .texto-virgen {
+    font-size: 10px;
+
+    padding: 8px 9px;
+  }
+
+
+  .fecha-virgen {
+    font-size: 10px;
+  }
+
+
+  .agradecimiento-virgen {
+    font-size: 10px;
+
+    padding: 9px;
+  }
+
+
+  .boton-capturar-virgen {
+    font-size: 10px;
+    padding: 9px 17px;
+  }
 }

@@ -8,11 +8,18 @@ function Virgen() {
 
   function capturarTablaTiempos() {
     const tabla = tablaVirgenRef.current;
-    html2canvas(tabla, { scale: 4 }).then(function (canvas) {
+
+    html2canvas(tabla, {
+      scale: 4,
+      backgroundColor: "#fffaf2",
+    }).then((canvas) => {
       const pngUrl = canvas.toDataURL("image/png");
+
       const downloadLink = document.createElement("a");
+
       downloadLink.href = pngUrl;
-      downloadLink.download = "Cooperacion virgen.png";
+      downloadLink.download = "Cooperacion-virgen.png";
+
       document.body.appendChild(downloadLink);
       downloadLink.click();
       document.body.removeChild(downloadLink);
@@ -20,234 +27,192 @@ function Virgen() {
   }
 
   return (
-    <div className="contenedor-tiempos">
+    <div className="contenedor-virgen">
+
       <table
         ref={tablaVirgenRef}
-        style={{
-          width: "100%",
-          borderCollapse: "collapse",
-          backgroundColor: "#fffaf4",
-          border: "2px solid #d4b48c",
-          fontFamily: "serif",
-        }}
+        className="tabla-virgen"
       >
         <tbody>
+
+          {/* IMÁGENES DE LA VIRGEN */}
           <tr>
-            <td
-              colSpan={6}
-              style={{
-                textAlign: "center",
-                padding: "10px",
-                display: "flex",
-                justifyContent: "center",
-                gap: "15px",
-              }}
-            >
+            <td className="imagenes-virgen">
+
               <img
                 src="/virgen.png"
-                alt="Virgen de Guadalupe 1"
-                style={{
-                  width: "85px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
+                alt="Virgen de Guadalupe"
+                className="imagen-virgen imagen-virgen-lateral"
               />
+
               <img
                 src="/virgen2.png"
-                alt="Virgen de Guadalupe 2"
-                style={{
-                  width: "auto",
-                  height: "115px",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
+                alt="Virgen de Guadalupe"
+                className="imagen-virgen imagen-virgen-centro"
               />
+
               <img
                 src="/virgen3.png"
-                alt="Virgen de Guadalupe 1"
-                style={{
-                  width: "85px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
+                alt="Virgen de Guadalupe"
+                className="imagen-virgen imagen-virgen-lateral"
               />
+
             </td>
           </tr>
 
+
+          {/* LOGO URBANOS ROJOS */}
           <tr>
-            <td
-              colSpan={6}
-              style={{
-                textAlign: "center",
-                padding: "2px",
-                display: "flex",
-                justifyContent: "center",
-                gap: "15px",
-              }}
-            >
+            <td className="logo-urbanos">
+
               <img
                 src="/urbanosrojos.png"
-                alt="Virgen de Guadalupe 1"
-                style={{
-                  width: "150px",
-                  height: "auto",
-                  borderRadius: "8px",
-                }}
+                alt="Urbanos Rojos"
+                className="imagen-urbanos"
               />
+
             </td>
           </tr>
 
+
+          {/* TÍTULO */}
           <tr>
-            <td
-              colSpan={6}
-              style={{
-                backgroundColor: "#d39b6a",
-                color: "white",
-                padding: "2px",
-                fontWeight: "bold",
-                textAlign: "center",
-                fontSize: "18px",
-                borderBottom: "2px solid #b17f52",
-              }}
-            >
-              Cooperación para la Fiesta en Honor a la Virgen de Guadalupe
+            <td className="titulo-virgen">
+
+              <div className="titulo-principal-virgen">
+                Cooperación para la Fiesta
+              </div>
+
+              <div className="subtitulo-virgen">
+                en Honor a la Virgen de Guadalupe
+              </div>
+
             </td>
           </tr>
 
-          <tr><td style={{ height: "10px" }}></td></tr>
 
+          {/* DECORACIÓN */}
           <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "3px",
-                color: "#4a3b2f",
-                fontSize: "12px",
-                lineHeight: "1.5",
-              }}
-            >
-              Compañeros operadores y postureros: como cada año, celebraremos la
-              tradicional fiesta en honor a la Virgen de Guadalupe, con el fin de
-              fortalecer la unión y la convivencia entre todos los integrantes de
-              Urbanos Rojos.
+            <td className="separador-dorado">
+              ✦ ✦ ✦
             </td>
           </tr>
 
-          <tr><td style={{ height: "10px" }}></td></tr>
 
+          {/* INTRODUCCIÓN */}
           <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "3px",
-                color: "#4a3b2f",
-                fontSize: "12px",
-                lineHeight: "1.5",
-              }}
-            >
-              Se solicita una cooperación de <b>$150 pesos</b> por persona: Chofer y Posturero, con el
-              objetivo de cubrir los gastos de alimentos, decoración, pintura,
-              iluminación y demás preparativos relacionados con esta celebración
-              religiosa.
+            <td className="texto-virgen">
+
+              Compañeros operadores y postureros: como cada año,
+              celebraremos la tradicional fiesta en honor a la Virgen
+              de Guadalupe, con el fin de fortalecer la unión y la
+              convivencia entre todos los integrantes de
+              <b> Urbanos Rojos.</b>
+
             </td>
           </tr>
 
-          <tr><td style={{ height: "10px" }}></td></tr>
 
+          {/* COOPERACIÓN */}
           <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "3px",
-                color: "#4a3b2f",
-                fontWeight: "bold",
-                fontSize: "12px",
-              }}
-            >
-              La recolección se realizará del jueves 20 de noviembre al jueves 5 de
-                diciembre.
+            <td className="texto-virgen">
+
+              Se solicita una cooperación de
+              <span className="cantidad-virgen">
+                $150 pesos
+              </span>
+              por persona: <b>Chofer y Posturero</b>, con el objetivo
+              de cubrir los gastos de alimentos, decoración, pintura,
+              iluminación y demás preparativos relacionados con esta
+              celebración religiosa.
+
             </td>
           </tr>
 
-          {/* <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "10px",
-                backgroundColor: "#c94d4d",
-                color: "white",
-                fontWeight: "bold",
-                borderRadius: "4px",
-              }}
-            >
-              Pasada esta fecha, quienes no hayan aportado no podrán salir de la base,
-              ya sea operador o posturero.
-            </td>
-          </tr> */}
 
-          <tr><td style={{ height: "10px" }}></td></tr>
-
+          {/* FECHA */}
           <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "3px",
-                color: "#4a3b2f",
-                fontSize: "12px",
-                lineHeight: "1.5",
-              }}
-            >
-              La cooperación será recibida por el checador <b>Pocoyó</b>, quien ha sido
-              designado formalmente como encargado de la recolección. Les agradecemos
-              su apoyo y les recordamos que pueden hacer su aportación en cualquier
-              momento dentro del periodo establecido.
+            <td className="bloque-fecha-virgen">
+
+              <div className="etiqueta-fecha">
+                PERIODO DE RECOLECCIÓN
+              </div>
+
+              <div className="fecha-virgen">
+                <span> del </span>
+                Jueves 20 de noviembre
+                <span> al </span>
+                jueves 5 de diciembre
+              </div>
+
             </td>
           </tr>
 
-          <tr><td style={{ height: "10px" }}></td></tr>
 
+          {/* ENCARGADO */}
           <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "3px",
-                color: "#4a3b2f",
-                fontSize: "12px",
-                lineHeight: "1.5",
-              }}
-            >
-              Agradecemos de antemano su colaboración y comprensión, confiando en que
-              esta tradición seguirá siendo un lazo de unión para todos.
+            <td className="texto-virgen">
+
+              La cooperación será recibida por el checador
+              <span className="encargado-virgen">
+                Pocoyó
+              </span>,
+              quien ha sido designado formalmente como encargado de
+              la recolección.
+
+              <br />
+
+              Les agradecemos su apoyo y les recordamos que pueden
+              hacer su aportación en cualquier momento dentro del
+              periodo establecido.
+
             </td>
           </tr>
 
-          <tr><td style={{ height: "15px" }}></td></tr>
 
+          {/* AGRADECIMIENTO */}
           <tr>
-            <td
-              colSpan={5}
-              style={{
-                padding: "8px",
-                textAlign: "center",
-                color: "#6e5a45",
-                fontStyle: "italic",
-                fontSize: "14px",
-              }}
-            >
-              © JoyBoy
+            <td className="agradecimiento-virgen">
+
+              Agradecemos de antemano su colaboración y comprensión,
+              confiando en que esta tradición seguirá siendo un lazo
+              de unión para todos.
+
             </td>
           </tr>
+
+
+          {/* DECORACIÓN FINAL */}
+          <tr>
+            <td className="decoracion-final-virgen">
+              ❖
+            </td>
+          </tr>
+
+
+          {/* COPYRIGHT */}
+          <tr>
+            <td className="copyright-virgen">
+              @el.joyboy.de.chignautla
+            </td>
+          </tr>
+
         </tbody>
       </table>
 
 
-      <div className="contenedor-boton">
-        <button onClick={capturarTablaTiempos} className="boton-capturar">
-          Capturar Cooperacion Virgen
+      {/* BOTÓN */}
+      <div className="contenedor-boton-virgen">
+
+        <button
+          onClick={capturarTablaTiempos}
+          className="boton-capturar-virgen"
+        >
+          Capturar Cooperación Virgen
         </button>
+
       </div>
+
     </div>
   );
 }

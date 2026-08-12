@@ -1,84 +1,280 @@
-.tabla-huapaltepec{
-    border-collapse: collapse;
-    border: 1px solid black;
+/* =========================================
+   TABLA HUAPALTEPEC - DISEÑO MÓVIL
+   ========================================= */
+
+.tabla-huapaltepec {
+  width: 96%;
+  max-width: 600px;
+  margin: 5px auto 15px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.12);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #222;
 }
 
-.encabezado-huapaltepec{
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid black;
+
+/* =========================================
+   ENCABEZADO PRINCIPAL
+   ========================================= */
+
+.encabezado-huapaltepec {
+  background: linear-gradient(
+    135deg,
+    #263238,
+    #37474f
+  );
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.3px;
 }
 
-.nota-huapaltepec{
-    background-color: lightpink;
-    color: #000000;
-    font-size: 12px;
-    border: 1px solid black;
-    text-align: center;
+
+/* =========================================
+   ENCABEZADOS DE COLUMNAS
+   ========================================= */
+
+.encabezado-tabla-huapaltepec {
+  background: #eceff1;
+  color: #263238;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #cfd8dc;
 }
 
-.nota-huapaltepec-roja{
-    background-color: rgb(255, 0, 38);
-    color: #ffffff;
-    font-size: 12px;
-    border: 1px solid black;
-    text-align: center;
+
+/* =========================================
+   CELDAS GENERALES
+   ========================================= */
+
+.tabla-huapaltepec td {
+  text-align: center;
+  vertical-align: middle;
+
+  line-height: 1.2;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.encabezado-tabla-huapaltepec{
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #a5e0fc;
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
+.tabla-huapaltepec td:last-child {
+  border-right: none;
 }
 
-.unidad03-huapaltepec{
-    font-size: 17px;
-    background-color: lightgreen;
-    color: #000000;
-    border: 1px solid black;
-    text-align: center;
+
+/* =========================================
+   UNIDAD 03 - VERDE
+   ========================================= */
+
+.unidad03-huapaltepec {
+  background: #b8e6c1;
+  color: #173b22;
+
+  font-weight: 600;
 }
 
-.unidad30-huapaltepec{
-    font-size: 17px;
-    background-color: rgb(238, 109, 255);
-    color: #000000;
-    border: 1px solid black;
-    text-align: center;
+
+/* Número de unidad un poco más destacado */
+
+tr .unidad03-huapaltepec:first-child {
+  font-weight: 800;
+  font-size: 13px;
 }
 
-.subida03-huapaltepec{
-    background-color: lightgreen;
-    font-size: 14px;
-    color: #000000;
-    border: 1px solid black;
-    text-align: center;
+
+/* =========================================
+   UNIDAD 30 - ROSA
+   ========================================= */
+
+.unidad30-huapaltepec {
+  background: #f8b4d9;
+  color: #4a1834;
+
+  font-weight: 600;
 }
 
-.subida30-huapaltepec{
-    background-color: rgb(238, 109, 255);
-    font-size: 14px;
-    color: #000000;
-    border: 1px solid black;
-    text-align: center;
+
+/* Número de unidad un poco más destacado */
+
+tr .unidad30-huapaltepec:first-child {
+  font-weight: 800;
+  font-size: 13px;
 }
 
-.mañana-tarde-huapaltepec{
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    font-size: 10px;
+
+/* =========================================
+   SEPARADORES
+   ========================================= */
+
+.separador-huapaltepec {
+  background: linear-gradient(
+    135deg,
+    #546e7a,
+    #607d8b
+  );
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-bottom: none !important;
 }
+
+
+/* =========================================
+   NOTAS
+   ========================================= */
+
+.nota-huapaltepec {
+  background: #f8f9fa;
+
+  color: #555;
+
+  text-align: left !important;
+
+  font-size: 10px;
+
+  line-height: 1.45 !important;
+
+  padding: 9px 10px !important;
+
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+
+/* =========================================
+   ÚLTIMA NOTA - TARIFAS
+   ========================================= */
+
+tr .nota-huapaltepec:last-child {
+  color: #37474f;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   COPYRIGHT
+   ========================================= */
 
 .copyright-huapaltepec {
-    background-color: #ffffff;
-    border: 0px solid black;
-    color: #000000;
+  background: #263238;
+
+  color: #cfd8dc;
+
+  text-align: center;
+
+  font-size: 9px;
+
+  padding: 8px !important;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   BOTÓN
+   ========================================= */
+
+.contenedor-boton {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 12px 0 25px 0;
+}
+
+
+.boton-capturar {
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #37474f,
+    #263238
+  );
+
+  color: #ffffff;
+
+  padding: 10px 20px;
+
+  border-radius: 25px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.18);
+
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease;
+}
+
+
+.boton-capturar:active {
+  transform: scale(0.96);
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   AJUSTES PARA CELULARES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+  .tabla-huapaltepec {
+    width: 98%;
+
     font-size: 10px;
-    text-align: center;
+
+    margin-top: 70px;
   }
+
+  .tabla-huapaltepec td {
+    padding: 6px 2px;
+  }
+
+  .encabezado-huapaltepec {
+    font-size: 14px;
+    padding: 11px 5px;
+  }
+
+  .encabezado-tabla-huapaltepec {
+    font-size: 10px;
+    padding: 7px 2px;
+  }
+
+  .separador-huapaltepec {
+    font-size: 10px;
+    padding: 7px 3px !important;
+  }
+
+  .nota-huapaltepec {
+    font-size: 9px;
+    padding: 8px !important;
+  }
+
+  .boton-capturar {
+    font-size: 11px;
+    padding: 9px 17px;
+  }
+}

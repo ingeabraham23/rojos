@@ -1,103 +1,331 @@
+/* =========================================
+   TABLA TEPEPAN - DISEÑO MÓVIL
+   ========================================= */
+
 .tabla-tepepan {
-  border-collapse: collapse;
-  border: 1px solid black;
+  width: 96%;
+  max-width: 600px;
+
+  margin: 10px auto 15px auto;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.12);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  color: #222;
 }
+
+
+/* =========================================
+   ENCABEZADO PRINCIPAL
+   ========================================= */
 
 .encabezado-tepepan {
-  background-color: #ff0000;
+  background: linear-gradient(
+    135deg,
+    #263238,
+    #37474f
+  );
+
   color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
+
   text-align: center;
-  border: 1px solid black;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 13px 8px;
+
+  letter-spacing: 0.3px;
 }
+
+
+/* =========================================
+   ENCABEZADOS DE LA TABLA
+   ========================================= */
 
 .encabezado-tabla-tepepan {
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #00aeff;
+  background: #eceff1;
+  color: #263238;
   text-align: center;
-  border: 1px solid black;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0;
+  border-bottom: 1px solid #cfd8dc;
 }
+
+
+/* =========================================
+   CELDAS GENERALES
+   ========================================= */
+
+.tabla-tepepan td {
+  text-align: center;
+
+  vertical-align: middle;
+
+  padding: 2px 1px;
+
+  line-height: 1.2;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+.tabla-tepepan td:last-child {
+  border-right: none;
+}
+
+
+/* =========================================
+   UNIDAD A - 05
+   AZUL CLARO
+   ========================================= */
 
 .unidada-tepepan {
-  font-size: 17px;
-  background-color: lightblue;
-  color: #000000;
-  border: 1px solid black;
-  text-align: center;
+  background: #b9d9f5;
+  color: #17344d;
+  font-weight: 600;
 }
 
-.unidada-tepepan-terraceria {
-  font-size: 10px;
-  background-color: lightblue;
-  color: #000000;
-  text-align: center;
+
+/* Número de unidad */
+
+tr .unidada-tepepan:first-child {
+  font-size: 13px;
+
+  font-weight: 800;
 }
+
+
+/* =========================================
+   UNIDAD B - 02
+   NARANJA SUAVE
+   ========================================= */
 
 .unidadb-tepepan {
-  font-size: 17px;
-  background-color: lightcoral;
-  color: #000000;
-  border: 1px solid black;
-  text-align: center;
+  background: #f8d7a8;
+  color: #4a3217;
+  font-weight: 600;
 }
 
-.unidadb-tepepan-pavimento {
-  font-size: 10px;
-  background-color: lightcoral;
-  color: #000000;
-  text-align: center;
+
+tr .unidadb-tepepan:first-child {
+  font-size: 13px;
+  font-weight: 800;
 }
+
+
+/* =========================================
+   UNIDAD C - 08
+   LILA
+   ========================================= */
 
 .unidadc-tepepan {
-  font-size: 17px;
-  background-color: lightgreen;
-  color: #000000;
-  border: 1px solid black;
-  text-align: center;
+  background: #d8c5f2;
+  color: #38264f;
+  font-weight: 600;
 }
 
-.unidadc-tepepan-pavimento {
-  font-size: 10px;
-  background-color: lightgreen;
-  color: #000000;
-  text-align: center;
+
+tr .unidadc-tepepan:first-child {
+  font-size: 13px;
+  font-weight: 800;
 }
+
+
+/* =========================================
+   UNIDAD D - 17
+   VERDE MENTA
+   ========================================= */
 
 .unidadd-tepepan {
-  font-size: 17px;
-  background-color: lightseagreen;
-  color: #000000;
-  border: 1px solid black;
-  text-align: center;
+  background: #b9e4c9;
+  color: #1d422b;
+  font-weight: 600;
 }
 
-.sin-horario-tepepan {
-  background-color: #ffffff;
-  font-size: 14px;
-  border: 0px solid black;
-  color: #000000;
-  border: 1px solid black;
+
+tr .unidadd-tepepan:first-child {
+  font-size: 13px;
+  font-weight: 800;
 }
 
-.centro-tepepan {
-  background-color: #ffffff;
-  border: 0px solid black;
-}
+
+/* =========================================
+   NOTAS
+   ========================================= */
 
 .nota-tepepan {
-  background-color: #585858;
+  background: #f8f9fa;
+
+  color: #555;
+
+  text-align: left !important;
+
+  font-size: 10px;
+
+  line-height: 1.45 !important;
+
+  padding: 1px 2px !important;
+
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+
+/* =========================================
+   NOTAS DE TARIFAS
+   ========================================= */
+
+.nota-tepepan b {
+  color: #263238;
+
+  font-weight: 800;
+}
+
+
+/* =========================================
+   COPYRIGHT
+   ========================================= */
+
+.copyright-tepepan {
+  background: #263238;
+
+  color: #cfd8dc;
+
+  text-align: center;
+
+  font-size: 9px;
+
+  padding: 8px !important;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   BOTÓN DE CAPTURA
+   ========================================= */
+
+.boton-capturar-tepepan {
+  display: block;
+
+  margin: 12px auto 25px auto;
+
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #37474f,
+    #263238
+  );
+
   color: #ffffff;
-  font-size: 12px;
-  border: 1px solid black;
+
+  padding: 10px 18px;
+
+  border-radius: 25px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+/* Efecto al tocar en celular */
+
+.boton-capturar-tepepan:active {
+  transform: scale(0.96);
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.foto-tepepan {
   text-align: center;
 }
 
-.copyright-tepepan {
-  background-color: #ffffff;
-  border: 0px solid black;
-  color: #000000;
-  font-size: 10px;
-  text-align: center;
+.foto-tepepan img {
+  width: 22rem;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+  .tabla-tepepan {
+    width: 98%;
+
+    font-size: 10px;
+
+    margin-top: 70px;
+  }
+
+
+  .tabla-tepepan td {
+    padding: 6px 2px;
+  }
+
+
+  .encabezado-tepepan {
+    font-size: 14px;
+
+    padding: 11px 5px;
+  }
+
+
+  .encabezado-tabla-tepepan {
+    font-size: 10px;
+
+    padding: 7px 2px;
+  }
+
+
+  .nota-tepepan {
+    font-size: 9px;
+
+    padding: 8px !important;
+  }
+
+
+  .boton-capturar-tepepan {
+    max-width: 90%;
+
+    font-size: 10px;
+
+    padding: 9px 15px;
+  }
 }
