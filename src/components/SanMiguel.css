@@ -1,85 +1,388 @@
-.tabla-sanmiguel{
-    border-collapse: separate;
-    border: 1px solid black;
+/* =====================================================
+   TARIFAS SAN MIGUEL
+   DISEÑO EXCLUSIVO PARA MÓVIL
+   ===================================================== */
+
+.tabla-tarifa-sanmiguel {
+  width: 98%;
+  max-width: 430px;
+
+  margin: 14px auto;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  border: 1px solid #e6e6e6;
+
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.09);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  table-layout: fixed;
 }
 
-.encabezado-sanmiguel{
-    background-color: #ff0000;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    border: 1px solid black;
+
+/* =====================================================
+   TÍTULO
+   ===================================================== */
+
+.titulo-tarifa-sanmiguel {
+  padding: 11px 8px 9px;
+
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #a90000,
+    #d51c1c
+  );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
 }
 
-.nota-sanmiguel{
-    background-color: #585858;
-    color: #ffffff;
-    font-size: 12px;
-    border: 1px solid black;
+
+.titulo-tarifa-sanmiguel span {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.9;
 }
 
-.encabezado-tabla-sanmiguel{
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #00aeff;
-    border: 1px solid black;
-    text-align: center;
+
+/* =====================================================
+   ENCABEZADOS
+   ===================================================== */
+
+.encabezado-tarifa-sanmiguel {
+  padding: 6px 3px;
+
+  background: #f5f5f5;
+
+  color: #777777;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
 }
 
-.san-miguel{
-    font-size: 22px;
-    background-color: lightgreen;
-    padding: 1px;
-    border: 1px solid black;
-    text-align: center;
-    color: #000000;
+
+/* =====================================================
+   CELDAS
+   ===================================================== */
+
+.tabla-tarifa-sanmiguel td {
+  text-align: center;
+
+  vertical-align: middle;
 }
 
-.san-miguel-precio{
-    font-size: 22px;
-    background-color: lightgreen;
-    text-align: left;
-    border: 1px solid black;
-    color: #000000;
+
+/* =====================================================
+   SAN MIGUEL
+   ===================================================== */
+
+.san-miguel {
+  position: relative;
+
+  padding: 7px 3px;
+
+  background: #fffafa;
+
+  color: #333333;
+
+  font-size: 16px;
+
+  border-bottom: 1px solid #f1e5e5;
 }
 
-.chignaulingo{
-    font-size: 22px;
-    background-color: lightblue;
-    border: 1px solid black;
-    color: #000000;
-    text-align: center;
+
+/* Pequeño indicador de la ruta */
+
+.indicador-san-miguel {
+  display: inline-block;
+
+  width: 5px;
+  height: 5px;
+
+  margin-right: 4px;
+
+  vertical-align: middle;
+
+  background: #c40000;
+
+  border-radius: 50%;
 }
 
-.chignaulingo-precio{
-    font-size: 22px;
-    background-color: lightblue;
-    text-align: left;
-    border: 1px solid black;
-    color: #000000;
+
+/* =====================================================
+   PRECIO SAN MIGUEL
+   ===================================================== */
+
+.san-miguel-precio {
+  padding: 6px 3px;
+
+  background: #fff5f5;
+
+  color: #a90000;
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  border-bottom: 1px solid #f1e5e5;
 }
 
-.copyright-sanmiguel{
-    color: #000000;
+
+/* =====================================================
+   SEPARADOR ENTRE RUTAS
+   ===================================================== */
+
+.separador-ruta-sanmiguel {
+  padding: 7px 5px;
+
+  background: #ffffff;
+
+  color: #a90000;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+/* Líneas a los lados del nombre */
+
+.separador-ruta-sanmiguel span {
+  display: inline-block;
+
+  width: 22px;
+
+  height: 1px;
+
+  margin: 0 7px;
+
+  vertical-align: middle;
+
+  background: #e2baba;
+}
+
+
+/* =====================================================
+   CHIGNAULINGO
+   ===================================================== */
+
+.chignaulingo {
+  padding: 7px 3px;
+
+  background: #fafafa;
+
+  color: #333333;
+
+  font-size: 16px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =====================================================
+   PRECIO CHIGNAULINGO
+   ===================================================== */
+
+.chignaulingo-precio {
+  padding: 6px 3px;
+
+  background: #f7f7f7;
+
+  color: #a90000;
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =====================================================
+   NOTA
+   ===================================================== */
+
+.nota-tarifa-sanmiguel {
+  padding: 8px 10px;
+
+  background: #fafafa;
+
+  color: #777777;
+
+  text-align: center;
+
+  font-size: 8px;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+.nota-tarifa-sanmiguel strong {
+  color: #555555;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   COPYRIGHT
+   ===================================================== */
+
+.copyright-tarifa-sanmiguel {
+  padding: 5px;
+
+  background: #ffffff;
+
+  color: #aaaaaa;
+
+  text-align: center;
+
+  font-size: 7px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   BOTÓN DE CAPTURA
+   ===================================================== */
+
+.contenedor-boton-sanmiguel {
+  display: flex;
+
+  justify-content: center;
+
+  margin: 10px auto 18px;
+}
+
+
+.boton-capturar-sanmiguel {
+  border: none;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  background: #b40000;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 3px 8px rgba(180, 0, 0, 0.22);
+
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.boton-capturar-sanmiguel:active {
+  transform: scale(0.96);
+}
+
+
+/* =====================================================
+   TELÉFONOS MUY PEQUEÑOS
+   ===================================================== */
+
+@media (max-width: 360px) {
+
+  .tabla-tarifa-sanmiguel {
+    width: 96%;
+
+    margin-top: 10px;
+
+    border-radius: 13px;
+  }
+
+
+  .titulo-tarifa-sanmiguel {
+    padding: 9px 5px;
+
+    font-size: 13px;
+  }
+
+
+  .encabezado-tarifa-sanmiguel {
+    padding: 5px 2px;
+
+    font-size: 7px;
+  }
+
+
+  .san-miguel,
+  .chignaulingo {
+    padding: 6px 2px;
+
+    font-size: 9px;
+  }
+
+
+  .san-miguel-precio,
+  .chignaulingo-precio {
+    padding: 6px 2px;
+
     font-size: 10px;
-    text-align: center;
-    background-color: #ffffff;
+  }
+
+
+  .nota-tarifa-sanmiguel {
+    font-size: 7px;
+  }
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio (altura/ancho * 100) */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background-color: black; /* Color de fondo si no se carga el video */
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  .titulo-h {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin: 10px 0 14px;
+  padding-bottom: 7px;
+  position: relative;
+  text-transform: uppercase;
+}
