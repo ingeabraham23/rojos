@@ -1,0 +1,332 @@
+.lavado-contenedor {
+  width: 100%;
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+/* TARJETA */
+
+.tarjeta-lavado {
+  width: 100%;
+  max-width: 400px;
+
+  min-height: 80vh;
+  max-height: 98vh;
+
+  box-sizing: border-box;
+
+  padding: 15px;
+
+  background: #fff;
+
+  border-radius: 22px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.14);
+
+  overflow: hidden;
+
+  font-family: Arial, sans-serif;
+
+  color: #14283d;
+}
+
+
+/* IMAGEN */
+
+.lavado-logo {
+  display: block;
+
+  width: 200px;
+  height: 200px;
+
+  object-fit: contain;
+
+  margin: 0 auto 4px;
+}
+
+
+/* TITULO */
+
+.tarjeta-lavado h1 {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  color: #e21d2b;
+
+  font-weight: 900;
+}
+
+.tarjeta-lavado h2 {
+  width: fit-content;
+
+  margin: 5px auto;
+
+  padding: 5px 18px;
+
+  border-radius: 20px;
+
+  background: #e21d2b;
+
+  color: white;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.lavado-descripcion {
+  margin: 5px 0 2px;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.lavado-marca {
+  text-align: center;
+
+  color: #e21d2b;
+
+  font-size: 17px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+
+/* PRECIOS */
+
+.lavado-precios {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+  margin-top: 13px;
+}
+
+.precio-card {
+  text-align: center;
+
+  padding: 10px 6px;
+
+  border-radius: 15px;
+
+  background: #f7f9fb;
+
+  border: 2px solid;
+}
+
+.precio-card.completo {
+  border-color: #e21d2b;
+}
+
+.precio-card.basico {
+  border-color: #20a957;
+}
+
+.precio-card span {
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+.precio-card strong {
+  display: block;
+
+  margin: 2px 0;
+
+  font-size: 38px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+.completo strong {
+  color: #e21d2b;
+}
+
+.basico strong {
+  color: #20a957;
+}
+
+.precio-card p {
+  margin: 3px 0 0;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* NOTA */
+
+.lavado-nota {
+  margin-top: 10px;
+
+  padding: 9px;
+
+  border-radius: 14px;
+
+  background: #fff8d8;
+
+  border: 2px solid #f1c400;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 7px;
+}
+
+.lavado-nota b {
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.lavado-nota p {
+  margin: 0;
+
+  font-size: 10px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+}
+
+.lavado-nota strong {
+  color: #e21d2b;
+
+  margin-left: 3px;
+}
+
+
+/* HORARIO */
+
+.lavado-horario {
+  margin-top: 10px;
+
+  padding: 10px;
+
+  border-radius: 15px;
+
+  background: #142d46;
+
+  color: white;
+}
+
+.lavado-horario div {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 4px 0;
+
+  font-size: 10px;
+}
+
+.lavado-horario div + div {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.lavado-horario strong {
+  font-size: 18px;
+
+  white-space: nowrap;
+}
+
+
+/* BOTON */
+
+.boton-capturar-lavado {
+  margin-top: 10px;
+
+  padding: 9px 20px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #e21d2b;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   IMÁGENES SUPERIORES
+========================================= */
+
+.imagenes-lavado {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 4px 2px 1px 2px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f5f9fc
+    );
+}
+
+.imagen-lavado {
+  object-fit: contain;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 7px rgba(30, 50, 70, 0.18);
+}
+
+
+.imagen-lavado-lateral {
+  width: 33%;
+
+  max-width: 150px;
+}
+
+
+.imagen-lavado-centro {
+  width: 32%;
+
+  max-width: 115px;
+
+  height: 115px;
+}

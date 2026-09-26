@@ -34,6 +34,7 @@ const navigationItems = [
   { path: '/cristo', icon: faCross, label: 'cristo' },
   { path: '/desfile', icon: faPersonWalking, label: 'desfile' },
   { path: '/reunion', icon: faPersonWalking, label: 'reunion' },
+  { path: '/lavado', icon: faPersonWalking, label: 'lavado' },
 
 ];
 

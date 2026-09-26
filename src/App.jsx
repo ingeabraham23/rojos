@@ -21,6 +21,7 @@ import Antorcha from './components/Antorcha';
 import CristoRey from './components/CristoRey';
 import Desfile from './components/Desfile';
 import Reunion from './components/Reunion';
+import Lavado from './components/Lavado';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/cristo" element={<CristoRey />} />
           <Route path="/desfile" element={<Desfile />} />
           <Route path="/reunion" element={<Reunion />} />
+          <Route path="/lavado" element={<Lavado />} />
         </Routes>
       </div>
     </HashRouter>

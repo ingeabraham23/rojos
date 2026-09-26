@@ -63,7 +63,7 @@
   text-align: left;
   color: #ffffff;
   background-color: #474747;
-  font-size: 10px;
+  font-size: 7px;
 }
 
 .boton-capturar {
@@ -91,4 +91,40 @@
   color: #000000;
   font-size: 10px;
   text-align: center;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
+.boton-capturar,
+.boton-pdf {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s ease;
+}
+
+.boton-capturar {
+  background: #222;
+  color: white;
+}
+
+.boton-pdf {
+  background: #b71c1c;
+  color: white;
+}
+
+.boton-capturar:active,
+.boton-pdf:active {
+  transform: scale(0.96);
 }
