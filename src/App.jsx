@@ -22,6 +22,7 @@ import CristoRey from './components/CristoRey';
 import Desfile from './components/Desfile';
 import Reunion from './components/Reunion';
 import Lavado from './components/Lavado';
+import InvitacionNavidad from './components/InvitacionNavidad';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="/desfile" element={<Desfile />} />
           <Route path="/reunion" element={<Reunion />} />
           <Route path="/lavado" element={<Lavado />} />
+          <Route path="/navidad" element={<InvitacionNavidad />} />
         </Routes>
       </div>
     </HashRouter>

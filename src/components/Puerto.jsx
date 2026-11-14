@@ -9,7 +9,7 @@ function Puerto() {
 
   function capturarTabla() {
     const tabla = tablaRef.current;
-    html2canvas(tabla, { scale: 4 }).then(function (canvas) {
+    html2canvas(tabla, { scale: 6 }).then(function (canvas) {
       const pngUrl = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.href = pngUrl;

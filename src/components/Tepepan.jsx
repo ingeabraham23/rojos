@@ -5,12 +5,13 @@ import html2canvas from "html2canvas";
 import "./Tepepan.css";
 
 function Tepepan() {
-  const mañanaLunesASabado = useRef(null);
-  const diaLunesASabado = useRef(null);
+  const mañanaLunesAViernes = useRef(null);
+  const diaLunesAViernes = useRef(null);
+  const sabadoMañanaYTarde = useRef(null);
   const domingoMañanaYTarde = useRef(null);
 
   function capturarTabla(tabla, nombre) {
-    html2canvas(tabla, { scale: 8 }).then(function (canvas) {
+    html2canvas(tabla, { scale: 6 }).then(function (canvas) {
       const pngUrl = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.href = pngUrl;
@@ -23,7 +24,7 @@ function Tepepan() {
 
   return (
     <div>
-      <table ref={mañanaLunesASabado} className="tabla-tepepan">
+      <table ref={mañanaLunesAViernes} className="tabla-tepepan">
         <tbody>
           <tr>
             <td colSpan={3} className="encabezado-tepepan">
@@ -32,7 +33,7 @@ function Tepepan() {
           </tr>
           <tr>
             <td className="encabezado-tabla-tepepan" colSpan={3}>
-              En la mañana
+              En la mañana Lunes a Viernes
             </td>
           </tr>
           <tr>
@@ -99,7 +100,8 @@ function Tepepan() {
           </tr>
           <tr>
             <td colSpan={3} className="nota-tepepan">
-              La unidad 17 que saca de tepepan a las 7:00 am pasa por libramiento bicentenario para llegar a teziutlán.
+              La unidad 17 que saca de tepepan a las 7:00 am pasa por
+              libramiento bicentenario para llegar a teziutlán.
             </td>
           </tr>
           <tr>
@@ -146,10 +148,7 @@ function Tepepan() {
       <div>
         <button
           onClick={() =>
-            capturarTabla(
-              mañanaLunesASabado.current,
-              "mañanaLunesASabado",
-            )
+            capturarTabla(mañanaLunesAViernes.current, "mañanaLunesASabado")
           }
           className="boton-capturar-tepepan"
         >
@@ -158,7 +157,8 @@ function Tepepan() {
         </button>
       </div>
 
-      <table ref={diaLunesASabado} className="tabla-tepepan">
+      {/* TABLA LUNES A VIERNES EN EL DIA*/}
+      <table ref={diaLunesAViernes} className="tabla-tepepan">
         <tbody>
           <tr>
             <td colSpan={7} className="encabezado-tepepan">
@@ -172,7 +172,7 @@ function Tepepan() {
           </tr>
           <tr>
             <td className="encabezado-tabla-tepepan" colSpan={3}>
-              De Lunes a Sabado
+              De Lunes a Viernes
             </td>
           </tr>
           <tr>
@@ -317,7 +317,7 @@ function Tepepan() {
       <div>
         <button
           onClick={() =>
-            capturarTabla(diaLunesASabado.current, "diaLunesASabado")
+            capturarTabla(diaLunesAViernes.current, "diaLunesASabado")
           }
           className="boton-capturar-tepepan"
         >
@@ -326,11 +326,129 @@ function Tepepan() {
         </button>
       </div>
 
+      {/* TABLA SABADO MAÑANA Y TARDE*/}
+      <table ref={sabadoMañanaYTarde} className="tabla-tepepan">
+        <tbody>
+          <tr>
+            <td colSpan={7} className="encabezado-tepepan">
+              Horarios Tepepan. Sábado
+            </td>
+          </tr>
+          <tr>
+            <td className="encabezado-tabla-tepepan" colSpan={3}>
+              Sábado en la mañana
+            </td>
+          </tr>
+          <tr>
+            <td className="encabezado-tabla-tepepan">#</td>
+            <td className="encabezado-tabla-tepepan">Teziutlan</td>
+            <td className="encabezado-tabla-tepepan">Tepepan</td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">08</td>
+            <td className="unidadc-tepepan"></td>
+            <td className="unidadc-tepepan">06:40</td>
+          </tr>
+          <tr>
+            <td className="unidadb-tepepan">02</td>
+            <td className="unidadb-tepepan"></td>
+            <td className="unidadb-tepepan">07:00</td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">08</td>
+            <td className="unidadc-tepepan">07:15</td>
+            <td className="unidadc-tepepan">07:45</td>
+          </tr>
+          <tr>
+            <td className="unidadb-tepepan">02</td>
+            <td className="unidadb-tepepan">07:30</td>
+            <td className="unidadb-tepepan">08:00</td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">08</td>
+            <td className="unidadc-tepepan">08:15</td>
+            <td className="unidadc-tepepan">08:45</td>
+          </tr>
+          <tr>
+            <td className="encabezado-tabla-tepepan" colSpan={3}>
+              Sábado en la tarde{" "}
+            </td>
+          </tr>
+          <tr>
+            <td className="encabezado-tabla-tepepan">#</td>
+            <td className="encabezado-tabla-tepepan">Teziutlan</td>
+            <td className="encabezado-tabla-tepepan">Tepepan</td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">08</td>
+            <td className="unidadc-tepepan">05:40</td>
+            <td className="unidadc-tepepan">06:15</td>
+          </tr>
+          <tr>
+            <td className="unidadb-tepepan">02</td>
+            <td className="unidadb-tepepan">06:30</td>
+            <td className="unidadb-tepepan">07:05</td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">08</td>
+            <td className="unidadc-tepepan">07:15</td>
+            <td className="unidadc-tepepan">07:40</td>
+          </tr>
+          <tr>
+            <td className="unidadb-tepepan">02</td>
+            <td className="unidadb-tepepan">08:00</td>
+            <td className="unidadb-tepepan">08:30</td>
+          </tr>
+          <tr>
+            <td className="unidadc-tepepan">08</td>
+            <td className="unidadc-tepepan">08:30</td>
+            <td className="unidadc-tepepan">09:00</td>
+          </tr>
+          <tr>
+            <td colSpan={3} className="nota-tepepan">
+              De Teziutlan a Tepepan - La barda: <b>$ 10.00</b>.
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={3} className="nota-tepepan">
+              De Teziutlan a Tepepan: <b>$ 11.00</b>.
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={3} className="nota-tepepan">
+              De Tepepan al Capulín: <b>$ 8.00</b>.
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={3} className="nota-tepepan">
+              De Tepepan al Fresnillo: <b>$ 9.00</b>.
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={3} className="copyright-tepepan">
+              © JoyBoy
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <button
+          onClick={() =>
+            capturarTabla(sabadoMañanaYTarde.current, "sabadoMañanaYTarde")
+          }
+          className="boton-capturar-tepepan"
+        >
+          {" "}
+          Descargar Tepepan sabado mañana y tarde
+        </button>
+      </div>
+
+      {/* TABLA DOMINGO MAÑANA Y TARDE*/}
       <table ref={domingoMañanaYTarde} className="tabla-tepepan">
         <tbody>
           <tr>
             <td colSpan={7} className="encabezado-tepepan">
-              Horarios Tepepan. Urbanos Rojos
+              Horarios Tepepan. Domingo
             </td>
           </tr>
           <tr>
@@ -428,10 +546,7 @@ function Tepepan() {
       <div>
         <button
           onClick={() =>
-            capturarTabla(
-              domingoMañanaYTarde.current,
-              "domingoMañanaYTarde",
-            )
+            capturarTabla(domingoMañanaYTarde.current, "domingoMañanaYTarde")
           }
           className="boton-capturar-tepepan"
         >

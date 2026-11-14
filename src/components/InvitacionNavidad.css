@@ -1,0 +1,550 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+/* =========================================
+   PÁGINA
+========================================= */
+
+.pagina-navidad {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 5px 2px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  background: #e9e8e2;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* =========================================
+   TARJETA PRINCIPAL
+========================================= */
+
+.invitacion-navidad {
+  position: relative;
+
+  width: 100%;
+  max-width: 430px;
+
+  /* Altura automática */
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      #ffffff 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      #eee4ce 0%,
+      transparent 40%
+    ),
+    #f8f3e8;
+
+  border: 7px solid #174c36;
+  outline: 2px solid #c5a35b;
+  outline-offset: -11px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px #00000020;
+
+  color: #263c2e;
+}
+
+/* =========================================
+   IMAGEN SUPERIOR
+========================================= */
+.navidad-imagen-superior,
+.navidad-imagen-inferior {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.navidad-imagen-superior img,
+.navidad-imagen-inferior img {
+  display: block;
+  width: 95%;
+  height: auto;
+  max-width: 95%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.navidad-contenido {
+  width: 100%;
+  height: auto;
+  flex: none;
+  min-height: 0;
+
+  box-sizing: border-box;
+  padding: 3px 6px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 5px;
+
+  text-align: center;
+}
+
+/* =========================================
+   ETIQUETA
+========================================= */
+
+.navidad-etiqueta {
+  margin: 0;
+
+  color: #9a7130;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.navidad-titulo {
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+
+.titulo-pequeno {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #a23c35;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.navidad-titulo h1 {
+  margin: 0;
+
+  color: #174c36;
+
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(43px, 13vw, 57px);
+  font-weight: 800;
+
+  letter-spacing: -2px;
+  line-height: 1.05;
+}
+
+.navidad-titulo h2 {
+  margin: 2px 0 0;
+
+  color: #a52f32;
+
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(29px, 8vw, 37px);
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+
+/* =========================================
+   ADORNO CENTRAL
+========================================= */
+
+.navidad-imagen-central {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  flex-shrink: 0;
+
+  display: block;
+
+  overflow: visible;
+  line-height: 0;
+}
+
+.navidad-imagen-central img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+/* =========================================
+   MENSAJE
+========================================= */
+
+.navidad-mensaje {
+  width: 100%;
+  max-width: 320px;
+
+  margin: 0;
+
+  color: #596052;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.navidad-invitacion {
+  margin: 0;
+
+  color: #a52f32;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+/* =========================================
+   FECHA
+========================================= */
+
+.navidad-fecha {
+  width: 100%;
+  /* max-width: 260px; */
+
+  padding: 2px 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+
+  background: #174c36;
+
+  border: 2px solid #c5a35b;
+  border-radius: 9px;
+
+  color: #fff8e8;
+}
+
+.fecha-dia {
+  color: #e4c77e;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  line-height: 1.4;
+}
+
+.navidad-fecha strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.fecha-mes {
+  color: #f3dca4;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   COOPERACIÓN
+========================================= */
+
+.navidad-cooperacion {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.cooperacion-titulo {
+  color: #a52f32;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.navidad-cooperacion strong {
+  color: #174c36;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  line-height: 0.7;
+}
+
+.cooperacion-detalle {
+  color: #596052;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+/* =========================================
+   PERIODO DE COOPERACIÓN
+========================================= */
+
+.navidad-pago {
+  width: 100%;
+
+  padding: 6px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background: #eee6d4;
+
+  border-left: 4px solid #b9954e;
+  border-radius: 5px;
+
+  text-align: left;
+}
+
+.pago-icono {
+  flex-shrink: 0;
+
+  color: #b9954e;
+  font-size: 30px;
+}
+
+.navidad-pago strong {
+  display: block;
+
+  color: #174c36;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.navidad-pago p {
+  margin: 4px 0 0;
+
+  color: #645e50;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   APORTACIONES VOLUNTARIAS
+========================================= */
+
+.navidad-voluntario {
+  width: 100%;
+
+  padding: 5px;
+
+  box-sizing: border-box;
+
+  background: #fffaf0;
+
+  border: 1px dashed #c5a35b;
+  border-radius: 7px;
+}
+
+.navidad-voluntario h3 {
+  margin: 0 0 7px;
+
+  color: #a52f32;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  line-height: 1.0;
+}
+
+.navidad-voluntario > p {
+  margin: 5px 0;
+
+  color: #596052;
+
+  font-size: 11px;
+  line-height: 1.0;
+}
+
+.navidad-opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 9px 16px;
+  margin: 10px 0;
+}
+
+.navidad-opciones span {
+  color: #174c36;
+
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.navidad-voluntario .voluntario-nota {
+  margin-top: 8px;
+
+  color: #76684e;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   DESPEDIDA
+========================================= */
+
+.navidad-despedida {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  text-align: center;
+}
+
+.navidad-despedida p {
+  margin: 0;
+
+  color: #596052;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.navidad-despedida strong {
+  color: #a52f32;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+/* =========================================
+   IMAGEN INFERIOR
+========================================= */
+
+.navidad-imagen-inferior {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  flex-shrink: 0;
+
+  display: block;
+
+  overflow: visible;
+  line-height: 0;
+}
+
+.navidad-imagen-inferior img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.boton-capturar-navidad {
+  width: 90%;
+  max-width: 350px;
+
+  padding: 14px 18px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #174c36,
+    #286c4a
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  box-shadow: 0 5px 12px #174c3630;
+
+  cursor: pointer;
+}
+
+.boton-capturar-navidad:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* =========================================
+   MÓVILES ESTRECHOS
+========================================= */
+
+@media (max-width: 360px) {
+
+  .invitacion-navidad {
+    border-width: 5px;
+  }
+
+  .navidad-contenido {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .navidad-etiqueta {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .navidad-mensaje {
+    font-size: 11px;
+  }
+
+  .navidad-voluntario .voluntario-nota {
+    font-size: 9px;
+  }
+}

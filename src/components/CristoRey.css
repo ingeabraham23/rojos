@@ -1,58 +1,336 @@
-.tabla-cristo {
-  border-collapse: collapse;
-  border: 1px solid black;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap');
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background: #eef1f5;
+    font-family: 'DM Sans', sans-serif;
+    color: #263445;
+}
+
+.tabla-cristo,
+.tabla-antorcha {
+    width: calc(100% - 20px);
+    max-width: 540px;
+    margin: 16px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #dce2e9;
+    border-radius: 13px;
+    box-shadow: 0 5px 18px rgba(25, 39, 57, 0.10);
+}
+
+/* =========================================
+   ENCABEZADO PRINCIPAL
+========================================= */
 
 .encabezado-tabla-cristo {
-  font-weight: bold;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #ff0000;
+    background: linear-gradient(135deg, #991b2b, #c6283d 60%, #e13b4f);
+    color: #ffffff;
+    padding: 6px 3px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: 0.2px;
+    border-bottom: 4px solid #781523;
 }
+
+/* =========================================
+   ENCABEZADOS DE SECCIONES
+========================================= */
 
 .encabezado-cristo {
-  background-color: #9dff00;
-  color: #000000;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
+    background: #243c5a;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.4;
+    border-bottom: 2px solid #d8a84e;
 }
 
+/* =========================================
+   CONTENIDO DE LAS TABLAS
+========================================= */
+
+.nota1-cristo,
+.nota2-cristo,
+.nota3-cristo,
+.nota4-cristo {
+    padding: 12px 15px;
+    background: #ffffff;
+    color: #344256;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.48;
+    text-align: left;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid #e7ebf0;
+}
+
+/* Diferenciación visual de las secciones */
+
 .nota1-cristo {
-  background-color: lightcoral;
-  color: #000000;
-  font-size: 12px;
-  text-align: left;
-  border: 1px solid black;
+    background: #ffffff;
 }
 
 .nota2-cristo {
-  background-color: lightblue;
-  color: #000000;
-  font-size: 12px;
-  text-align: left;
+    background: #f6f8fb;
 }
 
 .nota3-cristo {
-  background-color: lightpink;
-  color: #000000;
-  font-size: 12px;
-  text-align: left;
+    background: #ffffff;
 }
 
 .nota4-cristo {
-  background-color: lightgoldenrodyellow;
-  color: #000000;
-  font-size: 12px;
-  text-align: left;
+    background: #f6f8fb;
 }
 
+/* =========================================
+   TEXTOS IMPORTANTES
+========================================= */
+
+.tabla-cristo b,
+.tabla-antorcha b {
+    color: #243c5a;
+    font-weight: 800;
+}
+
+.tabla-cristo .encabezado-cristo b,
+.tabla-antorcha .encabezado-cristo b {
+    color: #ffffff;
+}
+
+/* =========================================
+   LISTAS
+========================================= */
+
+.tabla-cristo ul,
+.tabla-cristo ol,
+.tabla-antorcha ul,
+.tabla-antorcha ol {
+    margin: 6px 0;
+    padding-left: 21px;
+}
+
+.tabla-cristo li,
+.tabla-antorcha li {
+    padding-left: 2px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.tabla-cristo li:last-child,
+.tabla-antorcha li:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   PERSONA DESIGNADA
+========================================= */
+
+.campo-persona-apoyo {
+    width: calc(100% - 30px);
+    max-width: 480px;
+    margin: 18px auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid #dce2e9;
+    border-left: 5px solid #c6283d;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(25, 39, 57, 0.07);
+}
+
+.campo-persona-apoyo label {
+    color: #243c5a;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.campo-persona-apoyo input {
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    background: #f8fafc;
+    color: #243c5a;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.campo-persona-apoyo input:focus {
+    border-color: #c6283d;
+    box-shadow: 0 0 0 3px rgba(198, 40, 61, 0.12);
+}
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
 .copyright-cristo {
-  background-color: #ffffff;
-  border: 0px solid black;
-  color: #000000;
-  font-size: 10px;
-  text-align: center;
+    padding: 9px;
+    background: #202e40;
+    color: #cbd5e1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   BOTÓN DE CAPTURA
+========================================= */
+
+.contenedor-boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 12px 20px;
+}
+
+.boton-capturar {
+    width: 90%;
+    max-width: 350px;
+    min-height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #243c5a, #35618e);
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 10px rgba(36, 60, 90, 0.22);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-capturar:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(36, 60, 90, 0.15);
+}
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+hr {
+    width: 85%;
+    max-width: 450px;
+    margin: 18px auto;
+    border: none;
+    border-top: 1px solid #cbd5e1;
+}
+
+/* =========================================
+   DISPOSITIVOS MÓVILES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .tabla-cristo,
+    .tabla-antorcha {
+        width: calc(100% - 16px);
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+
+    .encabezado-tabla-cristo {
+        padding: 13px 10px;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .encabezado-cristo {
+        padding: 9px 8px;
+        font-size: 12.5px;
+        line-height: 1.35;
+    }
+
+    .nota1-cristo,
+    .nota2-cristo,
+    .nota3-cristo,
+    .nota4-cristo {
+        padding: 10px 11px;
+        font-size: 12px;
+        line-height: 1.42;
+    }
+
+    .tabla-cristo ul,
+    .tabla-cristo ol,
+    .tabla-antorcha ul,
+    .tabla-antorcha ol {
+        padding-left: 18px;
+        margin: 5px 0;
+    }
+
+    .tabla-cristo li,
+    .tabla-antorcha li {
+        margin-bottom: 4px;
+    }
+
+    .copyright-cristo {
+        padding: 7px;
+        font-size: 9px;
+    }
+
+    .campo-persona-apoyo {
+        margin: 12px auto;
+        padding: 13px;
+    }
+
+    .boton-capturar {
+        min-height: 44px;
+        font-size: 13px;
+    }
+}
+
+/* =========================================
+   PANTALLAS MUY PEQUEÑAS
+========================================= */
+
+@media (max-width: 360px) {
+
+    .encabezado-tabla-cristo {
+        font-size: 14px;
+    }
+
+    .encabezado-cristo {
+        font-size: 12px;
+    }
+
+    .nota1-cristo,
+    .nota2-cristo,
+    .nota3-cristo,
+    .nota4-cristo {
+        font-size: 11.5px;
+        padding: 9px;
+    }
 }

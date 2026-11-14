@@ -13,7 +13,10 @@ import {
     faTrashCan,
     faTree,
     faCross,
-    faPersonWalking,
+    faPersonMilitaryPointing,
+    faBroomBall,
+    faPeopleGroup,
+    faSleigh,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClockFour } from '@fortawesome/free-solid-svg-icons/faClockFour';
@@ -32,9 +35,10 @@ const navigationItems = [
   { path: '/virgen', icon: faHandsPraying, label: 'Virgen' },
   { path: '/antorcha', icon: faFireFlameCurved, label: 'Antorcha' },
   { path: '/cristo', icon: faCross, label: 'cristo' },
-  { path: '/desfile', icon: faPersonWalking, label: 'desfile' },
-  { path: '/reunion', icon: faPersonWalking, label: 'reunion' },
-  { path: '/lavado', icon: faPersonWalking, label: 'lavado' },
+  { path: '/desfile', icon: faPersonMilitaryPointing, label: 'desfile' },
+  { path: '/reunion', icon: faPeopleGroup, label: 'reunion' },
+  { path: '/lavado', icon: faBroomBall, label: 'lavado' },
+  { path: '/navidad', icon: faSleigh, label: 'navidad' },
 
 ];
 

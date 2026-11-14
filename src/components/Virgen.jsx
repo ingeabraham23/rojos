@@ -10,7 +10,7 @@ function Virgen() {
     const tabla = tablaVirgenRef.current;
 
     html2canvas(tabla, {
-      scale: 4,
+      scale: 6,
       backgroundColor: "#fffaf2",
     }).then((canvas) => {
       const pngUrl = canvas.toDataURL("image/png");
@@ -111,9 +111,9 @@ function Virgen() {
 
               <div className="fecha-virgen">
                 <span> del </span>
-                Jueves 20 de noviembre
+                Viernes 20 de noviembre
                 <span> al </span>
-                jueves 5 de diciembre
+                Sábado 5 de diciembre
               </div>
             </td>
           </tr>
