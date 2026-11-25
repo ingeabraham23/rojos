@@ -158,8 +158,7 @@ export default function InvitacionNavidad() {
           {/* DESPEDIDA */}
           <div className="navidad-despedida">
             <p>
-              Lo importante es compartir, convivir
-              y pasar un buen momento entre compañeros.
+              La cooperacion es valida para 1 sola persona, unicamente choferes mayores de 18 años.
             </p>
           </div>
 

@@ -38,7 +38,7 @@ body {
 .encabezado-tabla-cristo {
     background: linear-gradient(135deg, #991b2b, #c6283d 60%, #e13b4f);
     color: #ffffff;
-    padding: 6px 3px;
+    padding: 3px 1px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -263,13 +263,13 @@ hr {
     }
 
     .encabezado-tabla-cristo {
-        padding: 13px 10px;
+        padding: 3px 1px;
         font-size: 15px;
         line-height: 1.3;
     }
 
     .encabezado-cristo {
-        padding: 9px 8px;
+        padding: 5px 4px;
         font-size: 12.5px;
         line-height: 1.35;
     }
@@ -278,7 +278,7 @@ hr {
     .nota2-cristo,
     .nota3-cristo,
     .nota4-cristo {
-        padding: 10px 11px;
+        padding: 3px 4px;
         font-size: 12px;
         line-height: 1.42;
     }

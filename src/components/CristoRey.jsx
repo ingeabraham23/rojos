@@ -51,7 +51,7 @@ function CristoRey() {
 
           <tr>
             <td className="encabezado-cristo">
-              <b>De 6:00 AM a 9:00 AM</b>
+              <b>De 2:00 AM a 9:00 AM</b>
             </td>
           </tr>
 
@@ -103,7 +103,7 @@ function CristoRey() {
               <br />
               El checador, como autoridad operativa en turno, podrá{" "}
               <b>repetirle al operador la misma ruta</b>
-              (ya sea Ruta Normal o Puerto) si así lo considera necesario.
+              {" "}(ya sea Ruta Normal o Puerto) si así lo considera necesario.
               <ul>
                 <li>
                   <b>Ninguna decisión del checador deberá ser cuestionada</b>,
@@ -223,15 +223,18 @@ function CristoRey() {
               <b>{personaApoyo.trim() || "Por designar"}</b>
               <br />
               <br />
-              <b>Comisión para la persona designada:</b>
+              <b>Horario de apoyo:</b>
               <br />
-              Se solicita atentamente a los operadores brindar una
-              <b> contribución </b>
-              a la persona encargada, en reconocimiento a su labor de apoyo.
+              La persona designada estará brindando apoyo en un horario de
+              <b> 12:00 del mediodía a 7:00 de la tarde.</b>
               <br />
               <br />
-              En pocas palabras, no se vayan a hacer pendejos con su comisión.
-              🤬
+              <b>Comisión obligatoria:</b>
+              <br />
+              Se establece una comisión obligatoria de
+              <b> $30.00 pesos </b>
+              para cada operador, como reconocimiento a la labor de apoyo
+              realizada por la persona designada.
             </td>
           </tr>
 
